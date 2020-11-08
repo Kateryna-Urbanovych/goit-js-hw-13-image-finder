@@ -20,6 +20,7 @@ img {
 }
 
 .photo-card img {
+  margin-bottom: 15px;
   height: 200px;
   width: 100%;
   background-size: cover;
@@ -51,6 +52,7 @@ img {
 .photo-card:hover,
 .photo-card:focus {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .stats {

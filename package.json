@@ -52,6 +52,7 @@
   },
   "homepage": "https://Kateryna-Urbanovych.github.io/goit-js-hw-13-image-finder",
   "dependencies": {
+    "core-js": "^3.7.0",
     "lodash.debounce": "^4.0.8",
     "pnotify": "^5.1.2"
   }
