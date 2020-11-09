@@ -9,7 +9,7 @@ export default function onOpenModal(event) {
     }
 
     // console.log(event.target);
-    console.log(event.target.dataset.src);
+    // console.log(event.target.dataset.src);
     const instance = basicLightbox.create(`<img src="${event.target.dataset.src}" alt="" />`);
     instance.show();
 }
