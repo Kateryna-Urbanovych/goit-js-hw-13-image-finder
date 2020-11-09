@@ -3,6 +3,7 @@ import getRefs from './js/get-refs';
 import imagesTpl from './templates/image-card.hbs';
 import ImagesApiSevise from './js/images-servise';
 import LoadMoreBtn from './js/load-more-btn';
+import onOpenModal from './js/modal';
 const debounce = require('lodash.debounce');
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
@@ -18,6 +19,7 @@ const loadMoreBtn = new LoadMoreBtn({
 
 refs.searchForm.addEventListener('input', debounce(onSearchForm, 500));
 loadMoreBtn.refs.button.addEventListener('click', fetchImages);
+refs.galleryContainer.addEventListener('click', onOpenModal);
 
 let currentCoord = 0;
 
